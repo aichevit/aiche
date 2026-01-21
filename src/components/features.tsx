@@ -17,7 +17,7 @@ const teamMembers = [
   { name: "Ameya Shukla", role: "Chairperson", img: image3, link: "https://www.linkedin.com/in/ameya-shukla-35059927a" },
   { name: "Ananya Lakshmi", role: "Vice Chairperson", img: image2, link: "https://www.linkedin.com/in/ananya-lakshmi-55542428b" },
   { name: "Shyla Gupta", role: "Secretary", img: image, link: "https://www.linkedin.com/in/shyla-gupta-a16371304" },
-  { name: "Samayak Nitesh Chajjed", role: "Co-Secretary, Management Head", img: image4, link: "https://www.linkedin.com/in/samyakchhajed" },
+  { name: "Samyak Chhajed", role: "Co-Secretary, Management Head", img: image4, link: "https://www.linkedin.com/in/samyakchhajed" },
   { name: "Arpit Wibhute", role: "Finance Head", img: image12, link: "https://www.linkedin.com/in/arpit-wibhute-06594b28a/" },
   { name: "Abhilash", role: "Podcast Head and Webmaster", img: image8, link: "https://www.linkedin.com/in/abhilash-anilkumar-709bb228a" },
   { name: "Abhishek Nair", role: "Design & Media Head", img: image13, link: "https://www.linkedin.com/in/abhishek-nair-n-a7954a304/" },

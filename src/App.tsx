@@ -54,14 +54,12 @@ function App() {
   const navigate = useNavigate();
   const [isDesktop, setIsDesktop] = useState<boolean>(window.innerWidth >= 1024);
 
-  // Handle screen resize
   useEffect(() => {
     const handleResize = () => setIsDesktop(window.innerWidth >= 1024);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // --- Mobile View ---
   if (!isDesktop) {
     return (
       <>
@@ -73,9 +71,9 @@ function App() {
               element={<div className="box-border h-screen w-full m-0 p-0">{item.component}</div>} 
             />
           ))}
-          {/* Extra Route for Menu if it doesn't fit the panel structure */}
+
           <Route path="/menu" element={<div className="box-border h-screen w-full m-0 p-0"><Menu /></div>} />
-          {/* Extra Route for Menu if it doesn't fit the panel structure */}
+   
           <Route path="/gallery" element={<div className="box-border h-screen w-full m-0 p-0"><AicheGallery /></div>} />
         </Routes>
         <Analytics />
@@ -83,15 +81,13 @@ function App() {
     );
   }
 
-  // --- Desktop View ---
   return (
     <div className="relative h-full w-full m-0 p-0 overflow-x-hidden selection:bg-black selection:text-white">
       <div className="flex w-full h-full">
         
         {NAV_ITEMS.map((item) => {
-          // Fix: Ensure comparison handles uppercase/lowercase URLs correctly
-          const isActive = location.pathname.toLowerCase() === item.path.toLowerCase();
 
+          const isActive = location.pathname.toLowerCase() === item.path.toLowerCase();
           return (
             <motion.div
               key={item.id}
@@ -100,7 +96,7 @@ function App() {
               transition={{
                 opacity: { duration: 1, ease: "easeOut", delay: item.delay || 0 },
               }}
-              // Determine width and color based on active state
+
               className={`relative transition-all duration-500 cursor-pointer overflow-hidden ${
                 isActive ? 'w-[88%] h-screen z-10' : 'w-[4%]'
               }`}
@@ -113,12 +109,11 @@ function App() {
               }}
             >
               {isActive ? (
-                // --- EXPANDED CONTENT ---
+
                 <div className="scrollable h-full cursor-default">
                   {item.component}
                 </div>
               ) : (
-                // --- COLLAPSED TAB ---
                 <div className="h-full relative text-black flex justify-center">
                   {item.hasLogo ? (
                     <div className="w-16 h-fit mt-16 px-0.5">
