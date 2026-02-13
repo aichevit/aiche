@@ -15,7 +15,7 @@ const sectors = [
   },
   {
     id: 'cube',
-    title: 'Chem-E-Cube',
+    title: 'ChemE Cube',
     subtitle: 'OPTIMIZE // INTENSIFY',
     description: "A place where ideation meets practicality. We investigate major industrial problems and find innovative, novel solutions by scaling them down to a precision-engineered 1ft³ cube.",
     img: image2,

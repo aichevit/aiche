@@ -12,6 +12,7 @@ import image11 from '../assets/board/kavya.webp';
 import image12 from '../assets/board/arpit.webp';
 import image13 from '../assets/board/abhishek.webp';
 import image14 from '../assets/board/kathakali.webp';
+//import img from '../assets/black.webp';
 
 const teamMembers = [
   { name: "Ameya Shukla", role: "Chairperson", img: image3, link: "https://www.linkedin.com/in/ameya-shukla-35059927a" },

@@ -13,7 +13,7 @@ const BoardHeader = ({ details, title }: CommunityHeaderProps) => {
         window.location.href = url;
     };
 
-    // --- Scroll Logic ---
+        //Scroll Logic
     const [isHidden, setIsHidden] = useState(false);
     const { scrollY } = useScroll();
 
