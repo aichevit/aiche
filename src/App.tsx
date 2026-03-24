@@ -9,6 +9,7 @@ import Insiderpage from './pages/Insider';
 import Menu from './pages/Menu';
 import AicheGallery from './components/gallery';
 import logo from './assets/logo.webp';
+import ChemathonPopup from './components/popup';
 
 const NAV_ITEMS = [
   {
@@ -132,6 +133,7 @@ function App() {
         
       </div>
       <Analytics />
+      <ChemathonPopup />
     </div>
   );
 }
