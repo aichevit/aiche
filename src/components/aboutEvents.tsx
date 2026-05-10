@@ -14,7 +14,7 @@ interface ContentItem {
 const CONTENT: { events: ContentItem[]; podcasts: ContentItem[]; blogs: ContentItem[] } = {
     events: [
         { title: "Yantra Event", date: "01/2026", type: "EVENT" },
-        { title: "Chemathon 7.0", date: "03/2026", type: "EVENT" ,link: "https://www.youtube.com/playlist?list=PLcRDViqfG1-DOyQW9HTr7w5Ms-5PjMRHi" }
+        { title: "Chemathon 7.0", date: "03/2026", type: "EVENT", link:"https://www.chemathon.aichevit.in" }
     ],
     podcasts: [
         { 
